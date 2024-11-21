@@ -114,18 +114,20 @@ _(()___
                         </div>
                         <div class="code-example">
                             <code>
-if (true == false)
+if (true != false)
+    return;
+
+do 
 {
-    while (false)
-    {
-        try
-        {
-        }
-        catch (Exception)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+    return;
+} while (true);
+
+try
+{
+}
+catch (Exception)
+{
+    Console.WriteLine("Hello World!");
 }
                             </code>
                         </div>
